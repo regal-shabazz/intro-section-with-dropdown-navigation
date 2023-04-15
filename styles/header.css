@@ -1,0 +1,88 @@
+header .container {
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header span {
+  /* display: block; */
+}
+
+/* not visible on mobile */
+header .container > #login__x__register {
+  display: none;
+}
+
+/* nav */
+header nav {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+
+  border: 1px solid;
+}
+
+nav #close__menu {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 2rem;
+}
+
+nav #all__menu {
+  font-size: 1rem;
+}
+
+nav > ul > li {
+  padding: 1rem 0;
+  overflow: hidden;
+}
+
+nav .main__option {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+nav .inner__option__container {
+  margin-left: 1.5rem;
+  max-height: 0;
+  overflow: hidden;
+}
+
+nav .inner__option__flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav .inner__option {
+  margin-top: 1rem;
+}
+
+/* nav login and register buttons */
+
+nav #login__x__register {
+  display: grid;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+#login__x__register button {
+  display: block;
+  padding: 0.5rem 2.5rem;
+  border-radius: 10px;
+  background-color: transparent;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+#login__x__register #login {
+  margin-bottom: 0.5rem;
+  border: none;
+}

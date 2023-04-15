@@ -1,39 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Intro section with dropdown navigation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/general__styles.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/login.css" />
+    <link rel="stylesheet" href="./styles/register.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <!-- logo -->
+        <span class="logo">
+          <img src="./images/logo.svg" alt="" />
+        </span>
 
-  Features
-  Company
-  Careers
-  About
+        <!-- nav -->
+        <nav>
+          <span id="close__menu">
+            <img src="./images/icon-close-menu.svg" alt="">
+          </span>
 
-  Login
-  Register
+          <!-- menu -->
+          <ul id="all__menu">
+            <li>
+              <span class="main__option"
+                ><p>features</p>
+                <img src="./images/icon-arrow-down.svg" alt=""
+              /></span>
 
-  Make remote work
+              <!-- ul max-height 0 -->
+              <ul class="inner__option__container">
+                <li class="inner__option inner__option__flex">
+                  <img src="./images/icon-todo.svg" alt="" />
+                  <p>todo list</p>
+                </li>
+                <li class="inner__option inner__option__flex">
+                  <img src="./images/icon-calendar.svg" alt="" />
+                  <p>calendar</p>
+                </li>
+                <li class="inner__option inner__option__flex">
+                  <img src="./images/icon-reminders.svg" alt="" />
+                  <p>reminders</p>
+                </li>
+                <li class="inner__option inner__option__flex">
+                  <img src="./images/icon-planning.svg" alt="" />
+                  <p>planning</p>
+                </li>
+              </ul>
+            </li>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+            <li>
+              <span class="main__option"
+                ><p>company</p>
+                <img src="./images/icon-arrow-down.svg" alt=""
+              /></span>
 
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+              <ul class="inner__option__container">
+                <li class="inner__option">history</li>
+                <li class="inner__option">our blog</li>
+                <li class="inner__option">blog</li>
+              </ul>
+            </li>
+
+            <li>careers</li>
+            <li>about</li>
+          </ul>
+
+          <!-- mobile nav login and register button -->
+          <span id="login__x__register">
+            <button id="login">login</button>
+            <button id="register">register</button>
+          </span>
+        </nav>
+
+        <!-- desktop nav login and register button -->
+        <!-- hidden on mobile -->
+        <span id="login__x__register">
+          <button id="login">login</button>
+          <button id="register">register</button>
+        </span>
+        
+        <!-- hamburger menu for mobile view -->
+        <span id="open__menu">
+          <img src="./images/icon-menu.svg" alt="" />
+        </span>
+      </div>
+    </header>
+
+    <main>
+      <!-- display none in mobile view -->
+      <div id="footer" role="footer"></div>
+    </main>
+
+    <!-- display none in desktop view -->
+    <footer></footer>
+
+    <div id="login__page__popup"></div>
+    <div class="register__pageup"></div>
+
+    <!-- Features Company Careers About Login Register Make remote work Get your team
+    in sync, no matter your location. Streamline processes, create team rituals,
+    and watch productivity soar. Learn more -->
+  </body>
 </html>
